@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarX Lite - Clínica en tu mochila</title>
+  <style>
+    :root {
+      --bg:#040914;
+      --panel:#0b1222;
+      --accent:#3b82f6;
+      --accent2:#22d3ee;
+      --text:#f0f4ff;
+    }
+    * { box-sizing:border-box; }
+    body { font-family:'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:var(--bg); color:var(--text); }
+    h1 { font-size:48px; margin-bottom:10px; }
+    h2 { font-size:28px; margin-top:0; }
+    p { line-height:1.6; }
+    .hero { padding:60px 20px; text-align:center; }
+    .cta-main { background:linear-gradient(120deg,var(--accent),var(--accent2)); color:#fff; padding:16px 28px; border-radius:16px; text-decoration:none; display:inline-flex; gap:8px; align-items:center; font-weight:600; margin-top:24px; }
+    .grid { display:flex; flex-wrap:wrap; gap:20px; padding:40px 20px; max-width:1100px; margin:0 auto; }
+    .card { flex:1 1 280px; background:var(--panel); border:1px solid rgba(255,255,255,0.08); border-radius:20px; padding:24px; }
+    .pricing { padding:40px 20px; background:#050b1c; }
+    .price-card { flex:1 1 300px; background:#0d1630; border:1px solid rgba(255,255,255,0.12); border-radius:22px; padding:28px; display:flex; flex-direction:column; gap:12px; }
+    .price { font-size:40px; font-weight:700; }
+    .btn-pay { background:var(--accent); color:#fff; padding:14px 20px; border-radius:14px; text-align:center; text-decoration:none; font-weight:600; }
+    .footer { text-align:center; padding:30px 10px; font-size:14px; opacity:.7; }
+    @media (max-width:720px){ h1{font-size:36px;} .grid{flex-direction:column;} }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>StarX Lite</h1>
+    <p>Clínica portátil + Jarvis + automatización. Atiende en cualquier lugar sin perder datos.</p>
+    <a class="cta-main" href="#pagos">Apartar mi licencia ahora →</a>
+    <p style="margin-top:18px;opacity:.8;">Runway 30 días · Cupos limitados · Precios Stark de lanzamiento</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Todo en uno</h2>
+      <p>Backend clínico, HUD de campo, base de datos y scripts de IA listos para usar en minutos.</p>
+    </div>
+    <div class="card">
+      <h2>IA integrada</h2>
+      <p>ArcMind analiza tus casos a diario, prioriza focos críticos y recomienda la siguiente acción.</p>
+    </div>
+    <div class="card">
+      <h2>Modo SERUMS</h2>
+      <p>Funciona sin internet constante. Guarda todo localmente y sincroniza cuando vuelves a tener señal.</p>
+    </div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Automatización Stark</h2>
+      <p>Guardianes, limpiezas y tareas programadas para que nada se rompa mientras atiendes.</p>
+    </div>
+    <div class="card">
+      <h2>Instalación en minutos</h2>
+      <p>Incluye README, scripts y soporte remoto para replicar StarX en cualquier puesto o VM.</p>
+    </div>
+    <div class="card">
+      <h2>Personalizable</h2>
+      <p>Extiende con drones, bots, dashboards o sensores según la misión (Field Pod ready).</p>
+    </div>
+  </section>
+
+  <section id="pagos" class="pricing">
+    <div style="text-align:center;margin-bottom:30px;">
+      <h2>Planes Stark · Precios de lanzamiento</h2>
+      <p>Reserva hoy. Sin hardware adicional. Soporte Jarvis incluido.</p>
+    </div>
+    <div class="grid">
+      <div class="price-card">
+        <h3>Plan Start</h3>
+        <div class="price">S/ 49</div>
+        <p>HUD + backend básico + soporte por Telegram. Ideal para validar StarX en una guardia.</p>
+        <a class="btn-pay" href="https://pay.starx.pe/reserva" target="_blank">Comprar Start</a>
+      </div>
+      <div class="price-card">
+        <h3>Plan Pro</h3>
+        <div class="price">S/ 99</div>
+        <p>HUD + backend + ArcMind (gpt-4o-mini) + Stark Guardian + automatizaciones.</p>
+        <a class="btn-pay" href="https://pay.starx.pe/pro3" target="_blank">Comprar Pro</a>
+      </div>
+      <div class="price-card">
+        <h3>Plan SERUMS</h3>
+        <div class="price">S/ 149</div>
+        <p>Incluye setup guiado + capacitación express + soporte remoto 24/7 para tu puesto.</p>
+        <a class="btn-pay" href="https://pay.starx.pe/serums" target="_blank">Comprar SERUMS</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:20px;font-size:14px;opacity:.8;">Links de pago operados por Culqi / Mercado Pago. Recibirás comprobante automático.</p>
+  </section>
+
+  <section id="fieldpod" class="hero" style="background:#030713;">
+    <h2>Adopta un Field Pod Stark</h2>
+    <p>Kit portátil (NUC i5 + HUD + sensores BLE + Tailscale). Financia uno con S/500 o reserva tu propio pod.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Field Pod Mk I</h3>
+        <p>Mini PC i5 / 16GB / 1TB, tablet HUD 11", oxímetro + tensiómetro BLE, hotspot 4G, UPS 300Wh.</p>
+        <p>Preventa: <strong>S/ 2,490</strong> (incluye 6 meses Plan Pro).</p>
+      </div>
+      <div class="card">
+        <h3>Adopta un Pod (S/500)</h3>
+        <p>Financia 20% de un Field Pod para un SERUMS o misión humanitaria. Recibe reporte mensual + video HUD.</p>
+        <a class="btn-pay" href="https://pay.starx.pe/fieldpod" target="_blank">Adoptar un Field Pod</a>
+      </div>
+      <div class="card">
+        <h3>Modo Interplanetario</h3>
+        <p>Chasis sellado, SSD industrial, panel solar plegable, protocolos offline para Moon/Mars.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="hero">
+    <h2>Agenda una demo Express</h2>
+    <p>Recibe video demo + sesión Jarvis en menos de 48 horas.</p>
+    <div style="max-width:720px;margin:20px auto;">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
+        <iframe src="https://www.youtube.com/embed/VIDEO_PLACEHOLDER" title="Demo StarX" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+      </div>
+    </div>
+    <a class="cta-main" href="https://cal.starx.pe/demo" target="_blank">Agendar demo</a>
+    <p style="margin-top:16px;opacity:.8;">¿Prefieres WhatsApp/Telegram? Escríbenos a @JarvisStarX</p>
+  </section>
+
+  <div class="footer">StarX 2026 · Proyecto Stark Perú · contact@starx.pe</div>
+</body>
+</html>
